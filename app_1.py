@@ -141,26 +141,35 @@ def get_xls_cell_value(file_path, sheet_name, cell_ref):
 
 if __name__ == "__main__":
     # Example usage
-    folder_path = "docs"  # Replace with your folder path
-    file_format = ".xls"  # Replace with your desired file format
-    latest_file = get_latest_file(folder_path, file_format)
-    
-    if latest_file:
-        print(f"The latest file is: {latest_file}")
+    Mass_Update_folder_path = "docs/Mass_Update" 
+    Mass_Update_file_format = ".xls"
+    Mass_Update_latest_file = get_latest_file(Mass_Update_folder_path, Mass_Update_file_format)
+
+    Load_Plan_folder_path = "docs/Load_Plan" 
+    Load_Plan_file_format = ".xlsx"
+    Load_Plan_latest_file = get_latest_file(Load_Plan_folder_path, Load_Plan_file_format)
+
+    if Mass_Update_latest_file:
+        print(f"The latest file is: {Mass_Update_latest_file}")
+    else:
+        print("No files found matching the specified format.")
+
+    if Load_Plan_latest_file:
+        print(f"The latest file is: {Load_Plan_latest_file}")
     else:
         print("No files found matching the specified format.")
 
     status = update_xls_cell(
-    file_path=latest_file,
+    file_path=Mass_Update_latest_file,
     sheet_name="Mass Update",
     cell_ref="D6",
     update_value="06/09/2027"
             )
     print(status)
 
-    row_num, first_col_value = get_last_row_and_first_col_value(latest_file, "Mass Update")
+    row_num, first_col_value = get_last_row_and_first_col_value(Mass_Update_latest_file, "Mass Update")
     print("Last row number:", row_num)
     print("First column value in last row:", first_col_value)
 
-    value = get_xls_cell_value(latest_file, "Mass Update", "F6")
+    value = get_xls_cell_value(Mass_Update_latest_file, "Mass Update", "F6")
     print("Value in F6:", value)
