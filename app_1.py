@@ -100,6 +100,44 @@ def get_last_row_and_first_col_value(file_path, sheet_name):
             return None, None
     except Exception as e:
         return None, str(e)
+    
+    
+def get_xls_cell_value(file_path, sheet_name, cell_ref):
+    """
+    Returns the value of a cell in an .xls Excel file.
+    
+    Args:
+        file_path (str): Path to the .xls file.
+        sheet_name (str): Name of the worksheet.
+        cell_ref (str): Cell reference (e.g., 'C6').
+    
+    Returns:
+        The value of the cell, or an error message if not found.
+    """
+    try:
+        # Open the workbook and worksheet
+        wb = xlrd.open_workbook(file_path)
+        if sheet_name not in wb.sheet_names():
+            return f"Error: Sheet '{sheet_name}' not found."
+        ws = wb.sheet_by_name(sheet_name)
+        
+        # Parse the cell reference (e.g., 'C6')
+        match = re.match(r"([A-Za-z]+)([0-9]+)", cell_ref)
+        if not match:
+            return "Error: Invalid cell reference format."
+        col_letters, row_num = match.groups()
+        
+        # Convert column letters to 0-based index
+        col_idx = sum([(ord(char.upper()) - 64) * (26 ** i) for i, char in enumerate(reversed(col_letters))]) - 1
+        row_idx = int(row_num) - 1  # Excel rows are 1-based
+        
+        # Check bounds
+        if row_idx >= ws.nrows or col_idx >= ws.ncols:
+            return "Error: Cell reference out of range."
+        
+        return ws.cell_value(row_idx, col_idx)
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 if __name__ == "__main__":
     # Example usage
@@ -123,3 +161,6 @@ if __name__ == "__main__":
     row_num, first_col_value = get_last_row_and_first_col_value(latest_file, "Mass Update")
     print("Last row number:", row_num)
     print("First column value in last row:", first_col_value)
+
+    value = get_xls_cell_value(latest_file, "Mass Update", "F6")
+    print("Value in F6:", value)
