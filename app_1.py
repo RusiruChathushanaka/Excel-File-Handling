@@ -210,5 +210,5 @@ if __name__ == "__main__":
     print("Value in F6:", value)
 
 
-    cell_ref = get_cell_reference_by_value(Mass_Update_latest_file, "Mass Update", "06/09/2027")
+    cell_ref = get_cell_reference_by_value(Mass_Update_latest_file, "Mass Update", "Booked HOD *")
     print("Cell reference:", cell_ref)
