@@ -144,7 +144,7 @@ def get_xls_last_row(file_path, sheet_name):
     except Exception as e:
         return None, str(e)
 
-def get_cell_reference_by_value(file_path, sheet_name, cell_value):
+def get_xls_cell_reference_by_value(file_path, sheet_name, cell_value):
     """
     Returns the cell reference (e.g., 'A2', 'C8') for the first cell matching the given value.
     
