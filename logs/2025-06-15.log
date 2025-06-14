@@ -1,0 +1,243 @@
+2025-06-15 01:05:47 - INFO - 
+  --- SCRIPT RUN STARTED WITH THE FOLLOWING CONFIGURATION ---
+  Mass Update Folder: docs/Mass_Update
+  Mass Update File Format: .xls
+  Mass Update Sheet: Mass Update
+  Load Plan Folder: docs/Load_Plan
+  Load Plan File Format: .xlsx
+  Load Plan Sheet: LLL Load Plan - 16 June 25
+  Column Mappings File: column_mappings.json
+
+2025-06-15 01:05:47 - INFO - Successfully loaded column mappings.
+2025-06-15 01:05:47 - INFO - Locating latest files...
+2025-06-15 01:05:47 - INFO - Found Mass Update file: docs/Mass_Update\Mass_Update_SO_Req6887955545535304297.xls
+2025-06-15 01:05:47 - INFO - Found Load Plan file: docs/Load_Plan\Copy of lululemon __ ex-Colombo Ocean Load Plan - LLL Load Plan - 16 June 25.xlsx
+2025-06-15 01:05:47 - INFO - Extracting shipping orders from 'Shipping Order Number *' column...
+2025-06-15 01:05:47 - INFO - Found 9 shipping orders to process.
+2025-06-15 01:05:47 - INFO - --- Starting Update Process ---
+2025-06-15 01:05:47 - INFO - Processing Order: '454773467353 ' from row 5...
+2025-06-15 01:05:47 - INFO -   -> Found matching data in Load Plan at row 17.
+2025-06-15 01:05:47 - INFO -     - Updating cell J5 with value: '06/17/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell Q5 with value: '07/09/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell R5 with value: '07/25/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell S5 with value: '08/01/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell U5 with value: '08/01/2025'
+2025-06-15 01:05:47 - INFO - Processing Order: '454774312210 ' from row 6...
+2025-06-15 01:05:47 - INFO -   -> Found matching data in Load Plan at row 18.
+2025-06-15 01:05:47 - INFO -     - Updating cell J6 with value: '06/17/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell Q6 with value: '07/10/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell R6 with value: '07/25/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell S6 with value: '08/01/2025'
+2025-06-15 01:05:47 - INFO -     - Updating cell U6 with value: '08/01/2025'
+2025-06-15 01:05:47 - INFO - Processing Order: '454774400970 ' from row 7...
+2025-06-15 01:05:47 - INFO -   -> Found matching data in Load Plan at row 19.
+2025-06-15 01:05:47 - INFO -     - Updating cell J7 with value: '06/17/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell Q7 with value: '07/11/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell R7 with value: '07/25/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell S7 with value: '08/01/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell U7 with value: '08/01/2025'
+2025-06-15 01:05:48 - INFO - Processing Order: '454774401369 ' from row 8...
+2025-06-15 01:05:48 - INFO -   -> Found matching data in Load Plan at row 20.
+2025-06-15 01:05:48 - INFO -     - Updating cell J8 with value: '06/17/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell Q8 with value: '07/12/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell R8 with value: '07/25/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell S8 with value: '08/01/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell U8 with value: '08/01/2025'
+2025-06-15 01:05:48 - INFO - Processing Order: '454774676885 ' from row 9...
+2025-06-15 01:05:48 - INFO -   -> Found matching data in Load Plan at row 21.
+2025-06-15 01:05:48 - INFO -     - Updating cell J9 with value: '06/17/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell Q9 with value: '07/13/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell R9 with value: '07/25/2025'
+2025-06-15 01:05:48 - INFO -     - Updating cell S9 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell U9 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO - Processing Order: '454774766099 ' from row 10...
+2025-06-15 01:05:49 - INFO -   -> Found matching data in Load Plan at row 22.
+2025-06-15 01:05:49 - INFO -     - Updating cell J10 with value: '06/17/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell Q10 with value: '07/14/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell R10 with value: '07/25/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell S10 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell U10 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO - Processing Order: '454775187235 ' from row 11...
+2025-06-15 01:05:49 - INFO -   -> Found matching data in Load Plan at row 23.
+2025-06-15 01:05:49 - INFO -     - Updating cell J11 with value: '06/17/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell Q11 with value: '07/15/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell R11 with value: '07/25/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell S11 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO -     - Updating cell U11 with value: '08/01/2025'
+2025-06-15 01:05:49 - INFO - Processing Order: '454775192886 ' from row 12...
+2025-06-15 01:05:49 - INFO -   -> Found matching data in Load Plan at row 24.
+2025-06-15 01:05:49 - INFO -     - Updating cell J12 with value: '06/17/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell Q12 with value: '07/16/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell R12 with value: '07/25/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell S12 with value: '08/01/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell U12 with value: '08/01/2025'
+2025-06-15 01:05:50 - INFO - Processing Order: '454775252856 ' from row 13...
+2025-06-15 01:05:50 - INFO -   -> Found matching data in Load Plan at row 25.
+2025-06-15 01:05:50 - INFO -     - Updating cell J13 with value: '06/17/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell Q13 with value: '07/17/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell R13 with value: '07/25/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell S13 with value: '08/01/2025'
+2025-06-15 01:05:50 - INFO -     - Updating cell U13 with value: '08/01/2025'
+2025-06-15 01:05:50 - INFO - --- Update Process Finished ---
+2025-06-15 01:06:29 - INFO - 
+  --- SCRIPT RUN STARTED WITH THE FOLLOWING CONFIGURATION ---
+  Mass Update Folder: docs/Mass_Update
+  Mass Update File Format: .xls
+  Mass Update Sheet: Mass Update
+  Load Plan Folder: docs/Load_Plan
+  Load Plan File Format: .xlsx
+  Load Plan Sheet: LLL Load Plan - 16 June 25
+  Column Mappings File: column_mappings.json
+
+2025-06-15 01:06:29 - INFO - Successfully loaded column mappings.
+2025-06-15 01:06:29 - INFO - Locating latest files...
+2025-06-15 01:06:29 - INFO - Found Mass Update file: docs/Mass_Update\Mass_Update_SO_Req6887955545535304297.xls
+2025-06-15 01:06:29 - INFO - Found Load Plan file: docs/Load_Plan\Copy of lululemon __ ex-Colombo Ocean Load Plan - LLL Load Plan - 16 June 25.xlsx
+2025-06-15 01:06:29 - INFO - Extracting shipping orders from 'Shipping Order Number *' column...
+2025-06-15 01:06:29 - INFO - Found 9 shipping orders to process.
+2025-06-15 01:06:29 - INFO - --- Starting Update Process ---
+2025-06-15 01:06:29 - INFO - Processing Order: '454773467353 ' from row 5...
+2025-06-15 01:06:29 - INFO -   -> Found matching data in Load Plan at row 17.
+2025-06-15 01:06:29 - INFO -     - Updating cell J5 with value: '06/17/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell Q5 with value: '07/09/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell R5 with value: '07/25/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell S5 with value: '08/01/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell U5 with value: '08/01/2025'
+2025-06-15 01:06:29 - INFO - Processing Order: '454774312210 ' from row 6...
+2025-06-15 01:06:29 - INFO -   -> Found matching data in Load Plan at row 18.
+2025-06-15 01:06:29 - INFO -     - Updating cell J6 with value: '06/17/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell Q6 with value: '07/10/2025'
+2025-06-15 01:06:29 - INFO -     - Updating cell R6 with value: '07/25/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell S6 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell U6 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO - Processing Order: '454774400970 ' from row 7...
+2025-06-15 01:06:30 - INFO -   -> Found matching data in Load Plan at row 19.
+2025-06-15 01:06:30 - INFO -     - Updating cell J7 with value: '06/17/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell Q7 with value: '07/11/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell R7 with value: '07/25/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell S7 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell U7 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO - Processing Order: '454774401369 ' from row 8...
+2025-06-15 01:06:30 - INFO -   -> Found matching data in Load Plan at row 20.
+2025-06-15 01:06:30 - INFO -     - Updating cell J8 with value: '06/17/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell Q8 with value: '07/12/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell R8 with value: '07/25/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell S8 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO -     - Updating cell U8 with value: '08/01/2025'
+2025-06-15 01:06:30 - INFO - Processing Order: '454774676885 ' from row 9...
+2025-06-15 01:06:31 - INFO -   -> Found matching data in Load Plan at row 21.
+2025-06-15 01:06:31 - INFO -     - Updating cell J9 with value: '06/17/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell Q9 with value: '07/13/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell R9 with value: '07/25/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell S9 with value: '08/01/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell U9 with value: '08/01/2025'
+2025-06-15 01:06:31 - INFO - Processing Order: '454774766099 ' from row 10...
+2025-06-15 01:06:31 - INFO -   -> Found matching data in Load Plan at row 22.
+2025-06-15 01:06:31 - INFO -     - Updating cell J10 with value: '06/17/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell Q10 with value: '07/14/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell R10 with value: '07/25/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell S10 with value: '08/01/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell U10 with value: '08/01/2025'
+2025-06-15 01:06:31 - INFO - Processing Order: '454775187235 ' from row 11...
+2025-06-15 01:06:31 - INFO -   -> Found matching data in Load Plan at row 23.
+2025-06-15 01:06:31 - INFO -     - Updating cell J11 with value: '06/17/2025'
+2025-06-15 01:06:31 - INFO -     - Updating cell Q11 with value: '07/15/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell R11 with value: '07/25/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell S11 with value: '08/01/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell U11 with value: '08/01/2025'
+2025-06-15 01:06:32 - INFO - Processing Order: '454775192886 ' from row 12...
+2025-06-15 01:06:32 - INFO -   -> Found matching data in Load Plan at row 24.
+2025-06-15 01:06:32 - INFO -     - Updating cell J12 with value: '06/17/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell Q12 with value: '07/16/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell R12 with value: '07/25/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell S12 with value: '08/01/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell U12 with value: '08/01/2025'
+2025-06-15 01:06:32 - INFO - Processing Order: '454775252856 ' from row 13...
+2025-06-15 01:06:32 - INFO -   -> Found matching data in Load Plan at row 25.
+2025-06-15 01:06:32 - INFO -     - Updating cell J13 with value: '06/17/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell Q13 with value: '07/17/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell R13 with value: '07/25/2025'
+2025-06-15 01:06:32 - INFO -     - Updating cell S13 with value: '08/01/2025'
+2025-06-15 01:06:33 - INFO -     - Updating cell U13 with value: '08/01/2025'
+2025-06-15 01:06:33 - INFO - --- Update Process Finished ---
+2025-06-15 01:11:50 - INFO - 
+  --- SCRIPT RUN STARTED WITH THE FOLLOWING CONFIGURATION ---
+  Mass Update Folder: docs/Mass_Update
+  Mass Update File Format: .xls
+  Mass Update Sheet: Mass Update
+  Load Plan Folder: docs/Load_Plan
+  Load Plan File Format: .xlsx
+  Load Plan Sheet: LLL Load Plan - 16 June 25
+  Column Mappings File: column_mappings.json
+
+2025-06-15 01:11:50 - INFO - Successfully loaded column mappings.
+2025-06-15 01:11:50 - INFO - Locating latest files...
+2025-06-15 01:11:50 - INFO - Found Mass Update file: docs/Mass_Update\Mass_Update_SO_Req6887955545535304297.xls
+2025-06-15 01:11:50 - INFO - Found Load Plan file: docs/Load_Plan\Copy of lululemon __ ex-Colombo Ocean Load Plan - LLL Load Plan - 16 June 25.xlsx
+2025-06-15 01:11:50 - INFO - Extracting shipping orders from 'Shipping Order Number *' column...
+2025-06-15 01:11:50 - INFO - Found 9 shipping orders to process.
+2025-06-15 01:11:50 - INFO - --- Starting Update Process ---
+2025-06-15 01:11:50 - INFO - Processing Order: '454773467353 ' from row 5...
+2025-06-15 01:11:51 - INFO -   -> Found matching data in Load Plan at row 17.
+2025-06-15 01:11:51 - INFO -     - Updating cell J5 with value: '06/17/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell Q5 with value: '07/09/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell R5 with value: '07/25/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell S5 with value: '08/01/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell U5 with value: '08/01/2025'
+2025-06-15 01:11:51 - INFO - Processing Order: '454774312210 ' from row 6...
+2025-06-15 01:11:51 - INFO -   -> Found matching data in Load Plan at row 18.
+2025-06-15 01:11:51 - INFO -     - Updating cell J6 with value: '06/17/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell Q6 with value: '07/10/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell R6 with value: '07/25/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell S6 with value: '08/01/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell U6 with value: '08/01/2025'
+2025-06-15 01:11:51 - INFO - Processing Order: '454774400970 ' from row 7...
+2025-06-15 01:11:51 - INFO -   -> Found matching data in Load Plan at row 19.
+2025-06-15 01:11:51 - INFO -     - Updating cell J7 with value: '06/17/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell Q7 with value: '07/11/2025'
+2025-06-15 01:11:51 - INFO -     - Updating cell R7 with value: '07/25/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell S7 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell U7 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO - Processing Order: '454774401369 ' from row 8...
+2025-06-15 01:11:52 - INFO -   -> Found matching data in Load Plan at row 20.
+2025-06-15 01:11:52 - INFO -     - Updating cell J8 with value: '06/17/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell Q8 with value: '07/12/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell R8 with value: '07/25/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell S8 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell U8 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO - Processing Order: '454774676885 ' from row 9...
+2025-06-15 01:11:52 - INFO -   -> Found matching data in Load Plan at row 21.
+2025-06-15 01:11:52 - INFO -     - Updating cell J9 with value: '06/17/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell Q9 with value: '07/13/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell R9 with value: '07/25/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell S9 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO -     - Updating cell U9 with value: '08/01/2025'
+2025-06-15 01:11:52 - INFO - Processing Order: '454774766099 ' from row 10...
+2025-06-15 01:11:53 - INFO -   -> Found matching data in Load Plan at row 22.
+2025-06-15 01:11:53 - INFO -     - Updating cell J10 with value: '06/17/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell Q10 with value: '07/14/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell R10 with value: '07/25/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell S10 with value: '08/01/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell U10 with value: '08/01/2025'
+2025-06-15 01:11:53 - INFO - Processing Order: '454775187235 ' from row 11...
+2025-06-15 01:11:53 - INFO -   -> Found matching data in Load Plan at row 23.
+2025-06-15 01:11:53 - INFO -     - Updating cell J11 with value: '06/17/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell Q11 with value: '07/15/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell R11 with value: '07/25/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell S11 with value: '08/01/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell U11 with value: '08/01/2025'
+2025-06-15 01:11:53 - INFO - Processing Order: '454775192886 ' from row 12...
+2025-06-15 01:11:53 - INFO -   -> Found matching data in Load Plan at row 24.
+2025-06-15 01:11:53 - INFO -     - Updating cell J12 with value: '06/17/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell Q12 with value: '07/16/2025'
+2025-06-15 01:11:53 - INFO -     - Updating cell R12 with value: '07/25/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell S12 with value: '08/01/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell U12 with value: '08/01/2025'
+2025-06-15 01:11:54 - INFO - Processing Order: '454775252856 ' from row 13...
+2025-06-15 01:11:54 - INFO -   -> Found matching data in Load Plan at row 25.
+2025-06-15 01:11:54 - INFO -     - Updating cell J13 with value: '06/17/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell Q13 with value: '07/17/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell R13 with value: '07/25/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell S13 with value: '08/01/2025'
+2025-06-15 01:11:54 - INFO -     - Updating cell U13 with value: '08/01/2025'
+2025-06-15 01:11:54 - INFO - --- Update Process Finished ---
