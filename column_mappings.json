@@ -1,7 +1,7 @@
 {
-    "LSP Requested HOD" : "LSP Requested HOD",
-    "ETD Port Of Load Date" : "ETD Port Of Load Date",
-    "ETA Port Of Discharge Date" : "ETA Port Of Discharge Date",
-    "ETA IN DC Date" : "ETA IN DC Date",
-    "ETA Final Destination Date" : "ETA IN DC Date"
+    "J" : "LSP Requested HOD",
+    "Q" : "ETD Port Of Load Date",
+    "R" : "ETA Port Of Discharge Date",
+    "S" : "ETA IN DC Date",
+    "U" : "ETA IN DC Date"
 }
