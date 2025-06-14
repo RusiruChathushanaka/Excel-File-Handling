@@ -1,6 +1,6 @@
 import re
 import openpyxl
-import datetime
+from datetime import datetime, timedelta
 import numbers
 from excel_legacy_utils import get_xls_cell_value,update_xls_cell,get_xls_last_row,get_xls_cell_reference_by_value
 
@@ -29,6 +29,26 @@ def clean_number(value: any) -> any:
     
     # If it's not a number or has a non-zero decimal, return it as is
     return value
+
+def convert_excel_serial_to_date(serial_number: int) -> str:
+    """
+    Converts an Excel serial date number to a formatted string ('%m/%d/%Y').
+    
+    This handles the standard Windows Excel epoch (starting from 1900-01-01 as day 1).
+    
+    Args:
+        serial_number (int): The date serial number from Excel.
+        
+    Returns:
+        str: The formatted date string.
+    """
+    # Excel's epoch starts on 1899-12-31. Day 1 is Jan 1, 1900.
+    # However, it's often easier to start from 1899-12-30 due to the 1900 leap year bug.
+    # Adding the serial number as a timedelta gives the correct date.
+    start_date = datetime(1899, 12, 30)
+    delta = timedelta(days=serial_number)
+    converted_date = start_date + delta
+    return converted_date.strftime('%m/%d/%Y')
 
 def get_column_values(file_path: str, sheet_name: str, column_name: str) -> list:
     """
@@ -231,14 +251,14 @@ def find_row_and_get_values(file_path: str, sheet_name: str, search_column_name:
                 
                 # --- CORRECTED FORMATTING LOGIC ---
                 # If the value is a datetime object, format it to a readable string.
-                if isinstance(value, datetime.datetime):
+                if isinstance(value, datetime):
                     # This format produces 'YYYY-MM-DD'. You can change it to whatever you need,
                     # for example: '%d-%b-%y' would produce '16-Jun-25'.
                     value = value.strftime('%Y-%m-%d')
                 # --- END OF FORMATTING LOGIC ---
-                
-                row_data[col_name] = value
-            
+
+                row_data[col_name] = convert_excel_serial_to_date(value)
+
             workbook.close()
             return row_index, row_data
 
