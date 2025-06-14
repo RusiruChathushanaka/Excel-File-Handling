@@ -1,11 +1,13 @@
 from file_utils import get_latest_file
 from excel_legacy_utils import (get_xls_cell_value,update_xls_cell,get_xls_last_row,get_xls_cell_reference_by_value)
 from excel_new_utils import get_xlsx_cell_value, update_xlsx_cell, get_xlsx_last_row, get_xlsx_cell_reference_by_value
+from func_utils import get_column_values
 
 if __name__ == "__main__":
     # Example usage
     Mass_Update_folder_path = "docs/Mass_Update" 
     Mass_Update_file_format = ".xls"
+    Mass_Update_Sheet_name = "Mass Update"
     Mass_Update_latest_file = get_latest_file(Mass_Update_folder_path, Mass_Update_file_format)
 
 
@@ -64,3 +66,20 @@ if __name__ == "__main__":
 
     cell_ref = get_xlsx_cell_reference_by_value(Load_Plan_latest_file, Load_Plan_Sheet_name, "Book HOD")
     print("Cell reference:", cell_ref)
+
+
+    print("func utils library----------------")
+
+    COLUMN_HEADER = "Shipping Order Number *"
+
+    # Call the function and get the list of shipping order numbers
+    shipping_orders = get_column_values(Mass_Update_latest_file, Mass_Update_Sheet_name, COLUMN_HEADER)
+
+    # Print the results
+    if shipping_orders:
+        print("\n--- Extracted Shipping Order Numbers ---")
+        for order in shipping_orders:
+            print(order)
+        print(f"\nTotal orders found: {len(shipping_orders)}")
+    else:
+        print("\nCould not extract any shipping order numbers.")
