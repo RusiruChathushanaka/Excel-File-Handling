@@ -139,6 +139,41 @@ def get_xls_cell_value(file_path, sheet_name, cell_ref):
     except Exception as e:
         return f"Error: {str(e)}"
 
+def col_idx_to_letters(col_idx):
+    """Convert a zero-based column index to Excel-style letters."""
+    letters = ''
+    while col_idx >= 0:
+        letters = chr(col_idx % 26 + ord('A')) + letters
+        col_idx = col_idx // 26 - 1
+    return letters
+
+def get_cell_reference_by_value(file_path, sheet_name, cell_value):
+    """
+    Returns the cell reference (e.g., 'A2', 'C8') for the first cell matching the given value.
+    
+    Args:
+        file_path (str): Path to the .xls file.
+        sheet_name (str): Name of the worksheet.
+        cell_value: Value to search for (case and type sensitive).
+    
+    Returns:
+        str: Cell reference (e.g., 'B5') or an error message.
+    """
+    try:
+        wb = xlrd.open_workbook(file_path)
+        if sheet_name not in wb.sheet_names():
+            return f"Error: Sheet '{sheet_name}' not found."
+        ws = wb.sheet_by_name(sheet_name)
+        for row_idx in range(ws.nrows):
+            for col_idx in range(ws.ncols):
+                if ws.cell_value(row_idx, col_idx) == cell_value:
+                    col_letters = col_idx_to_letters(col_idx)
+                    cell_ref = f"{col_letters}{row_idx + 1}"
+                    return cell_ref
+        return "Error: Value not found in sheet."
+    except Exception as e:
+        return f"Error: {str(e)}"
+
 if __name__ == "__main__":
     # Example usage
     Mass_Update_folder_path = "docs/Mass_Update" 
@@ -173,3 +208,7 @@ if __name__ == "__main__":
 
     value = get_xls_cell_value(Mass_Update_latest_file, "Mass Update", "F6")
     print("Value in F6:", value)
+
+
+    cell_ref = get_cell_reference_by_value(Mass_Update_latest_file, "Mass Update", "06/09/2027")
+    print("Cell reference:", cell_ref)
